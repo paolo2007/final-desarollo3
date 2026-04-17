@@ -35,15 +35,7 @@ cd sistema-academico
 bash
 cd backend
 npm install
-Configura tu archivo .env:
-
-env
-PORT=3000
-DB_HOST=localhost
-DB_USER=root
-DB_PASS=tu_password
-DB_NAME=sistema_academico
-JWT_SECRET=tu_secreto
+Configura tu archivo .env
 Inicia el servidor:
 
 bash
@@ -53,7 +45,7 @@ bash
 cd frontend
 npm install
 ng serve -o
-🔑 Autenticación
+ Autenticación
 Login: POST /auth
 
 Perfil del usuario autenticado: GET /auth/me (requiere token JWT)
