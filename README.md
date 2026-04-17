@@ -22,7 +22,7 @@ Proyecto fullstack desarrollado con **Angular** (frontend) y **Express + Sequeli
 
 ---
 
-## ⚙️ Instalación
+##  Instalación
 
 ### 1. Clonar repositorio
 ```bash
