@@ -1,0 +1,37 @@
+<div class="dashboard">
+  <div class="header">
+    <h2> Panel de Control</h2>
+    <p>Resumen general del sistema</p>
+  </div>
+
+  <!-- Loader -->
+  <div *ngIf="cargando" class="loading">
+    <mat-spinner diameter="50"></mat-spinner>
+    <span>Cargando datos...</span>
+  </div>
+
+  <!-- Cards -->
+  <div class="card-container" *ngIf="!cargando">
+    
+    <mat-card class="card usuarios" (click)="irGestionUsuarios()">
+      <div class="card-icon">
+        <mat-icon>group</mat-icon>
+      </div>
+      <div class="card-info">
+        <h3>{{ totalUsuarios }}</h3>
+        <p>Usuarios registrados</p>
+      </div>
+    </mat-card>
+
+    <mat-card class="card cursos" (click)="irGestionCursos()">
+      <div class="card-icon">
+        <mat-icon>school</mat-icon>
+      </div>
+      <div class="card-info">
+        <h3>{{ totalCursos }}</h3>
+        <p>Cursos disponibles</p>
+      </div>
+    </mat-card>
+
+  </div>
+</div>

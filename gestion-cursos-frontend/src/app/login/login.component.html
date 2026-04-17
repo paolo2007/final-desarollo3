@@ -1,0 +1,12 @@
+<div class="login-form" *ngIf="!showRegister">
+  <h2>Iniciar Sesión</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <label>Email</label>
+    <input type="email" formControlName="email" />
+
+    <label>Password</label>
+    <input type="password" formControlName="password" />
+
+    <button type="submit">Ingresar</button>
+  </form>
+</div>

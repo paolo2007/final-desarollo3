@@ -1,0 +1,35 @@
+// Angular Material theming
+@use '@angular/material' as mat;
+
+html {
+  height: 100%;
+  @include mat.theme((
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+// Variables personalizadas
+$color-primario: #3498db;
+$color-secundario: #2ecc71;
+$color-error: #e74c3c;
+
+// Mixin reutilizable
+@mixin card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 15px;
+}
+
+// Estilos globales
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: var(--mat-sys-on-surface);
+}

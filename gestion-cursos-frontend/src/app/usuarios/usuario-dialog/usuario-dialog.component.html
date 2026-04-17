@@ -1,0 +1,65 @@
+<h2 mat-dialog-title>{{ data.id ? 'Editar Usuario' : 'Registrar Usuario' }}</h2>
+
+<mat-dialog-content>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>DNI</mat-label>
+    <input matInput [(ngModel)]="usuario.dni" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Nombres</mat-label>
+    <input matInput [(ngModel)]="usuario.nombres" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Apellidos</mat-label>
+    <input matInput [(ngModel)]="usuario.apellidos" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Teléfono</mat-label>
+    <input matInput [(ngModel)]="usuario.telefono" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Vivienda</mat-label>
+    <input matInput [(ngModel)]="usuario.vivienda" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="usuario.email" />
+  </mat-form-field>
+
+  <!-- Contraseña (ahora editable siempre) -->
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Contraseña</mat-label>
+    <input matInput type="password" [(ngModel)]="usuario.password" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Carrera</mat-label>
+    <input matInput [(ngModel)]="usuario.carrera" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Ciclo</mat-label>
+    <mat-select [(ngModel)]="usuario.ciclo">
+      <mat-option *ngFor="let c of [1,2,3,4,5,6,7,8,9,10]" [value]="c">{{c}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Rol</mat-label>
+    <mat-select [(ngModel)]="usuario.rol">
+      <mat-option value="admin">Admin</mat-option>
+      <mat-option value="profesor">Profesor</mat-option>
+      <mat-option value="estudiante">Estudiante</mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="cancelar()">Cancelar</button>
+  <button mat-raised-button color="primary" (click)="guardar()">Guardar</button>
+</mat-dialog-actions>

@@ -1,0 +1,34 @@
+
+
+@use "sass:color";
+@use '../../styles.scss' as *;
+
+
+
+.page-not-found {
+  text-align: center;
+  padding: 50px;
+
+  h2 {
+    color: $color-error;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #555;
+  }
+
+  .btn {
+    background: $color-primario;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+
+    &:hover {
+      background: color.adjust($color-error, $lightness: -10%);
+    }
+  }
+}
