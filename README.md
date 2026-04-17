@@ -1,7 +1,4 @@
-# final-desarollo3
-Aquí tienes un README.md completo y profesional para tu proyecto Angular + Express con gestión de usuarios y dashboard de estudiante. Está listo para copiar y pegar:
 
-markdown
 # Sistema de Gestión Académica
 
 Proyecto fullstack desarrollado con **Angular** (frontend) y **Express + Sequelize** (backend), orientado a la gestión de usuarios, cursos y dashboards personalizados según rol (Administrador, Profesor, Estudiante).
