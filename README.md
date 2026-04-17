@@ -29,7 +29,7 @@ Proyecto fullstack desarrollado con **Angular** (frontend) y **Express + Sequeli
 
 ### 1. Clonar repositorio
 ```bash
-git clone https://github.com/tuusuario/sistema-academico.git
+(https://github.com/paolo2007/final-desarollo3)
 cd sistema-academico
 2. Backend
 bash
